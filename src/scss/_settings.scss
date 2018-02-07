@@ -1,0 +1,28 @@
+//Colors 
+$pink: rgb(198, 82, 127);
+$lightPink: rgba(198, 82, 127,0.93);
+$black: #262626;
+
+//Basic styles
+
+* {box-sizing: border-box;}
+img {display: block;}
+
+body {
+  background: url("../img/background.jpg") fixed;
+}
+
+
+#page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+//Media
+
+@media screen and (max-width: 1200px) {
+  #page {
+    padding: 0 10px;
+  }
+}

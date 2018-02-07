@@ -1,0 +1,16 @@
+//Reset CSS
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+//Fonts
+@import "https://use.fontawesome.com/releases/v5.0.6/css/all.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=latin-ext";
+
+//Settings file 
+@import "settings";
+
+//Components
+@import "typography";
+@import "navigation";
+@import "footer";
+@import "layout";
+

@@ -1,0 +1,122 @@
+
+section {
+  display: flex;
+}
+.article-box {
+  background: url("../img/article-img.jpg");
+  text-align: center;
+  padding: 25px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 2;
+  width: 60%;
+}
+.article-header-img {
+  margin: 0 auto;
+  height: auto;
+  width: 40%;
+}
+.article-header {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+  position: relative;
+}
+.article-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  height: 6px;
+  background: $pink;
+  width: 50px;
+  margin-top: 10px;
+}
+.article-paragraph {
+  font-size: 16px;
+}
+.article-img {
+  background: url("../img/img-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  display: flex;
+  order: 1;
+  height: 600px;
+}
+section:nth-child(2) .article-img {
+  background-image: url("../img/img-2.png");
+}
+section:nth-child(3) .article-img {
+  background-image: url("../img/img-3.png");
+}
+section:nth-child(odd) .article-img {
+  width: 60%;
+  order: 2;
+}
+section:nth-child(odd) .article-box {
+  width: 40%;
+  order: 1;
+}
+section:nth-child(4) .article-img {
+  background-image: url("../img/background-4.jpg");
+}
+.article-img-full-width {
+  width: 100%;
+}
+
+//Media
+
+@media screen and (max-width: 1024px) {
+  .article-box, .article-img {
+    width: 50%;
+    height: 500px;
+  }
+  section:nth-child(odd) .article-img {
+    width: 50%;
+  }
+  section:nth-child(odd) .article-box {
+    width: 50%;
+  }
+  .article-img-full-width {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article-img {
+    width: 100%;
+    height: 400px;
+    order: inherit;
+  }
+  .article-box {
+    height: auto;
+    width: 100%;
+    padding: 70px 20px; 
+    order: inherit;
+  }
+  section {
+    flex-wrap: wrap;
+  }
+  section:nth-child(odd) .article-img {
+    width: 100%;
+    order: initial;
+  }
+  section:nth-child(odd) .article-box {
+    width: 100%;
+    order: initial;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .article-img {
+    height: 300px;
+  }
+  .article-box {
+    padding: 30px 15px;
+  }
+}
