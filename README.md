@@ -9,5 +9,5 @@ Technologies i've used:
 - Javasccript (ES5)
 - GULP
 
-Live: https://radek-wawrzyk.github.io/Cesoir-PSD2HTML/dist/
+Live: https://radek-wawrzyk.github.io/Cesoir-PSD2HTML/dist/ <br />
 Layout: https://cdn-images-1.medium.com/max/1600/0*-wrk9DQf76DyllNa.jpg
