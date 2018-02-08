@@ -16,3 +16,25 @@
     });
 
   } navigationMenu();
+  
+  function scrollDown() {
+    function scrollIt(element) {
+      window.scrollTo({
+        'behavior': 'smooth',
+        'left': 0,
+        'top': element.offsetTop
+      });
+    }
+
+    var link = document.querySelector('.header-arrow'),
+      section = document.querySelector("#ourstory");
+
+    link.addEventListener("click", function() {
+    scrollIt(section);
+    });
+  } scrollDown();
+  
+
+  
+
+
