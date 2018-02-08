@@ -152,6 +152,18 @@ header {
   .navigation-logo img {
     width: 80%;
   }
+  .header-img {
+    top: 40%;
+    transform: translate(-45%, -40%);
+  }
+  .header-img::before {
+    border-width: 0 90px 90px 0;
+    top: 40%;
+  }
+  .header-img img {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 
