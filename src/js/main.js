@@ -27,8 +27,26 @@
     }
 
     var link = document.querySelector('.header-arrow'),
-      section = document.querySelector("#ourstory");
+        links = document.querySelectorAll('.link'),
+        section = document.querySelector("#ourstory"),
+        sections = document.querySelectorAll("section");
 
+    links[0].addEventListener("click", function(){
+      scrollIt(sections[0]);
+    });
+
+    links[1].addEventListener("click", function(){
+      scrollIt(sections[1]);
+    });
+
+    links[2].addEventListener("click", function(){
+      scrollIt(sections[2]);
+    });
+
+    links[3].addEventListener("click", function(){
+      scrollIt(sections[3]);
+    });
+    
     link.addEventListener("click", function() {
     scrollIt(section);
     });
