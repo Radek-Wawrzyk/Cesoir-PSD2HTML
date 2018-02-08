@@ -24,7 +24,8 @@ header {
 .header-arrow {
   position: absolute;
   bottom: 10%;
-  left: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
   animation-name: bounce-arrow;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -34,9 +35,9 @@ header {
   margin: 0 auto;
 }
 @keyframes bounce-arrow {
-  0% {transform: translate3d(0,0,0);}
-  50% {transform: translate3d(0,50px,0);}
-  100% {transform: translate3d(0,0,0);}
+  0% {transform: translate(-50%,0);}
+  50% {transform: translate(-50%,50px);}
+  100% {transform: translate(-50%,0);}
 }
 
 //Navigation
@@ -151,6 +152,18 @@ header {
 @media screen and (max-width: 476px) {
   .navigation-logo img {
     width: 80%;
+  }
+  .header-img {
+    top: 40%;
+    transform: translate(-45%, -40%);
+  }
+  .header-img::before {
+    border-width: 0 90px 90px 0;
+    top: 40%;
+  }
+  .header-img img {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
