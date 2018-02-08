@@ -29,7 +29,7 @@ var config = {
   cssoutname: 'style.css',
   jsoutname: 'script.js',
   cssreplaceout: 'css/style.css',
-  jsreplaceout: 'js/script.js'
+  jsreplaceout: 'js/main.js'
 };
 
 gulp.task('reload', function() {
